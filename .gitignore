@@ -6,6 +6,9 @@
 /out-tsc
 /bazel-out
 
+# Angular Cache
+.angular
+
 # Node
 /node_modules
 npm-debug.log

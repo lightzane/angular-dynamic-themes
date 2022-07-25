@@ -17,18 +17,70 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/try-primeng-themes",
+            "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              {
+                "input": "src/themes/lara-light-blue.scss",
+                "bundleName": "lara-light-blue",
+                "inject": false
+              },
+              {
+                "input": "src/themes/lara-dark-blue.scss",
+                "bundleName": "lara-dark-blue",
+                "inject": false
+              },
+              {
+                "input": "src/themes/lara-light-teal.scss",
+                "bundleName": "lara-light-teal",
+                "inject": false
+              },
+              {
+                "input": "src/themes/lara-dark-teal.scss",
+                "bundleName": "lara-dark-teal",
+                "inject": false
+              },
+              {
+                "input": "src/themes/md-light-indigo.scss",
+                "bundleName": "md-light-indigo",
+                "inject": false
+              },
+              {
+                "input": "src/themes/md-dark-indigo.scss",
+                "bundleName": "md-dark-indigo",
+                "inject": false
+              },
+              {
+                "input": "src/themes/bootstrap4-light-blue.scss",
+                "bundleName": "bootstrap4-light-blue",
+                "inject": false
+              },
+              {
+                "input": "src/themes/bootstrap4-dark-blue.scss",
+                "bundleName": "bootstrap4-dark-blue",
+                "inject": false
+              },
+              {
+                "input": "src/themes/saga-blue.scss",
+                "bundleName": "saga-blue",
+                "inject": false
+              },
+              {
+                "input": "src/themes/vela-blue.scss",
+                "bundleName": "vela-blue",
+                "inject": false
+              },
+              {
+                "input": "src/themes/arya-blue.scss",
+                "bundleName": "arya-blue",
+                "inject": false
+              }
             ],
             "scripts": []
           },
@@ -91,13 +143,8 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           }
         }

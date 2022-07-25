@@ -1,4 +1,14 @@
-# TryPrimengThemes
+# Dynamic Themes
+
+See demo: https://lightzane.github.io/angular-dynamic-themes
+
+```
+angular.json
+styles.scss
+src/themes
+src/app/theme.service.ts
+src/app/app.component.ts
+```
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.6.
 
